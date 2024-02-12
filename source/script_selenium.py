@@ -16,4 +16,4 @@ submit_button.click()
 
 message = driver.find_element(by=By.ID, value="message")
 print("Mensagem final", message.text)
-sleep(30)
+sleep(60)
