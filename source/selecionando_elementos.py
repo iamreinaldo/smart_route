@@ -9,3 +9,4 @@ driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.ibge.gov.br")
 barra_busca = driver.find_element(By.ID, "mod-search-searchword")
+barra_busca.send_keys("Inflação")
