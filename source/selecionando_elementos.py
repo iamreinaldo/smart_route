@@ -6,3 +6,6 @@ from time import sleep
 
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
+
+driver.get("https://www.ibge.gov.br")
+barra_busca = driver.find_element(By.ID, "mod-search-searchword")
